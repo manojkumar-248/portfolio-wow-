@@ -643,7 +643,9 @@ label {
 .lapskillheading {
     font-size: 24px;
     padding-right: 4px;
+    color:white;
     color:var(--favcolor);
+
     /* color: #00fbff; */
     /* color:var(--favcolor); */
      -webkit-text-stroke: 2px rgb(194, 56, 5);
