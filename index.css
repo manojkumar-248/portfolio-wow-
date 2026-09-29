@@ -35,7 +35,8 @@
     align-items: center;
 }
 :root{
-    --favcolor:rgb(254, 72, 6);
+    --favcolor:rgb(220, 64, 7);
+    --favcolor1:gold;
 }
 
 /*----nav- bar-------*/
@@ -476,7 +477,7 @@ label {
 
 .abtmyname h5 {
     position: absolute;
-    top: 47px;
+    top: 45px;
     left: 50px;
     color: gold;
     -webkit-text-stroke: 1px rgb(249, 71, 7);
@@ -642,7 +643,11 @@ label {
 .lapskillheading {
     font-size: 24px;
     padding-right: 4px;
-    color: #00fbff;
+    color:var(--favcolor);
+    /* color: #00fbff; */
+    /* color:var(--favcolor); */
+     -webkit-text-stroke: 2px rgb(194, 56, 5);
+     -webkit-text-stroke: 2px var(--favcolor1);
 }
 
 .rowx-left h2,
@@ -691,7 +696,7 @@ label {
 .circle {
     width: 45px;
     height: 45px;
-    border: 3px solid yellow;
+    border: 3px solid var(--favcolor1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -711,6 +716,7 @@ label {
     height: 3px;
     width: 26%;
     background-color: gold;
+    background-color: var(--favcolor1);
     position: absolute;
     top: 45%;
     left: 20.5%;
@@ -722,6 +728,8 @@ label {
     height: 43px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: 67%;
     left: 46.3%;
@@ -737,6 +745,8 @@ label {
     height: 3px;
     width: 26%;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: 45%;
     right: 20.5%;
@@ -747,6 +757,8 @@ label {
     height: 42px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: 67%;
     right: 46.3%;
@@ -780,6 +792,8 @@ label {
     height: 3px;
     width: 25.4%;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: 21%;
     left: 19%;
@@ -790,6 +804,8 @@ label {
     height: 42px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: -8%;
     left: 45%;
@@ -804,6 +820,8 @@ label {
     height: 3px;
     width: 25.4%;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: 21%;
     right: 18.9%;
@@ -814,6 +832,8 @@ label {
     height: 43px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+    
     position: absolute;
     top: -8%;
     right: 45%;
@@ -851,6 +871,8 @@ label {
     height: 3px;
     width: 27.6%;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: -17%;
     left: 19.6%;
@@ -863,6 +885,8 @@ label {
     height: 90px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: -331%;
     left: 47.5%;
@@ -878,6 +902,8 @@ label {
     height: 3px;
     width: 27.8%;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: -17%;
     right: 19.6%;
@@ -888,6 +914,8 @@ label {
     height: 90px;
     width: 3px;
     background-color: gold;
+    background-color: var(--favcolor1);
+
     position: absolute;
     top: -331%;
     right: 47.5%;
@@ -1123,7 +1151,6 @@ label {
     animation-range: entry 2% cover 30%;
 }
 
-
 .edtcnt {
     display: flex;
     width: 100%;
@@ -1155,10 +1182,9 @@ label {
 
 .edt-progress-1 {
 
-    background-color: coral;
+    background-color: var(--favcolor);
     height: 100%;
-
-
+ 
     animation: 1s linear 0s infinite progress-bar-stripes;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
@@ -1186,7 +1212,7 @@ label {
 .edt-progress-2 {
 
     height: 100%;
-    background-color: coral;
+    background-color: var(--favcolor);
 
     animation: 1s linear 0s infinite progress-bar-stripes;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -1210,7 +1236,7 @@ label {
 
 .edt-progress-3 {
     height: 100%;
-    background-color: coral;
+    background-color:var(--favcolor);
 
     animation: 1s linear 0s infinite progress-bar-stripes;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
