@@ -21,6 +21,8 @@
     color: white;
     background-color: black;
     contain: paint;
+
+    scroll-behavior: smooth;
 }
 
 .dis1 {
