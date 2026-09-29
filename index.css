@@ -30,6 +30,11 @@
     justify-content: center;
     align-items: center;
 }
+.dis2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*----nav- bar-------*/
 
