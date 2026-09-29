@@ -20,9 +20,7 @@
     font-family: "Inter", sans-serif;
     color: white;
     background-color: black;
-
-
-
+    contain: paint;
 }
 
 .dis1 {
@@ -30,10 +28,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .dis2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+:root{
+    --favcolor:rgb(254, 72, 6);
 }
 
 /*----nav- bar-------*/
@@ -143,6 +145,7 @@ label {
     padding: 70px 16px;
     gap: 16px;
     color: white;
+
 }
 
 .contentrole {
@@ -284,43 +287,49 @@ label {
     height: 345px;
     /* padding: 8px;  */
 
-    overflow: hidden;
-  border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
+    border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
     box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    /* overflow: hidden; */
 
-    animation: shapeChange 4s linear infinite;
+    animation: shapeChange 6s linear infinite;
     transform: scale(1.2);
 
     box-shadow: 0 0 15px white, 0 0 30px #00bfff, 0 0 60px #00bfff;
+     box-shadow: 0 0 20px white,0 0 30px rgb(246, 67, 2), 0 0 60px rgb(250, 69, 3);
 
     /* animation-delay: 2s; */
+    contain: paint;
 }
 
 /*-------summa----*/
 .overmypic::before {
     content: "";
     position: absolute;
-    width: 320px;
-    height: 345px;
+    width: 316px;
+    height: 339px;
     border-radius: 50%;
     border: 2px solid #00bfff;
-  border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
-
-    animation: pulse 1.5s infinite;
     
+    border: 2px solid rgb(249, 71, 6);
+    border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
+
+    animation: pulse 1.4s infinite;
+
 }
+
 @keyframes pulse {
     0% {
-    transform: scale(1);
-    opacity: 1;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
 }
-100% {
-    transform: scale(1.4);
-    opacity: 0;
-}
-    
-}
+
 .firstcircle img {
     height: 100%;
     width: 100%;
@@ -330,28 +339,32 @@ label {
 }
 
 @keyframes shapeChange {
-     0% {
+    0% {
         border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
     }
 
-    20% {
+    15% {
         border-radius: 45% 55% 48% 52% / 52% 45% 55% 48%;
     }
 
-    40% {
+    30% {
         border-radius: 55% 48% 52% 45% / 48% 55% 45% 52%;
     }
 
-    60% {
+    45% {
         border-radius: 48% 52% 45% 55% / 55% 48% 52% 45%;
     }
 
-    80% {
+    60% {
         border-radius: 52% 45% 55% 48% / 45% 55% 48% 52%;
     }
 
+    75% {
+        border-radius: 45% 55% 45% 52% / 52% 48% 55% 45%;
+    }
+
     100% {
-        border-radius: 50% 55% 45% 52% / 52% 48% 55% 45%;
+        border-radius: 50% 45% 55% 48% / 45% 52% 48% 55%;
     }
 
 }
@@ -361,7 +374,7 @@ label {
 ---===================-----*/
 .about {
     min-height: 100vh;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -377,8 +390,6 @@ label {
     font-size: 28px;
     /* font-weight: bolder; */
     /* justify-content: center; */
-
-
 }
 
 .aboutunderline {
@@ -432,7 +443,7 @@ label {
     position: relative;
     contain: paint;
 
-    padding: 10px;
+    padding: 19px;
     border-radius: 4px;
 }
 
@@ -459,16 +470,18 @@ label {
 .abtmyname h1 {
     font-size: 69px;
     color: transparent;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px white;
     font-weight: 900;
 }
 
 .abtmyname h5 {
     position: absolute;
-    top: 39px;
+    top: 47px;
     left: 50px;
-    color: white;
-
+    color: gold;
+    -webkit-text-stroke: 1px rgb(249, 71, 7);
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .aboutcontent p {
@@ -496,7 +509,7 @@ label {
 .bottomline {
     height: 10.7px;
     width: 100px;
-    background-color: yellow;
+    background-color: rgb(254, 70, 3);
     position: absolute;
     transition: all 1s;
 }
@@ -505,7 +518,7 @@ label {
 .rightline {
     height: 100px;
     width: 10.8px;
-    background-color: yellow;
+    background-color: rgb(244, 68, 4);
     position: absolute;
     transition: all 1s;
 }
@@ -549,6 +562,7 @@ label {
     /* transform: translateY(224px); */
     top: 80%;
 }
+
 /* .secpic{
     overflow: hidden;
 }
@@ -575,7 +589,7 @@ label {
     gap: 1px;
     align-items: center;
     contain: paint;
-    scroll-margin: 200px;
+    scroll-margin: 80px;
     padding: 19px 0px;
 }
 
@@ -928,11 +942,13 @@ label {
 .project {
     min-height: 100vh;
     width: 100%;
-    background-color: deepskyblue;
-    scroll-margin: 200px;
+    /* background-color: deepskyblue; */
+    scroll-margin:55px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .proover {
@@ -949,7 +965,7 @@ label {
     flex-direction: column;
     align-items: center;
     width: 40%;
-    min-height: 600px;
+    min-height: 566px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -960,12 +976,12 @@ label {
     position: absolute;
     height: 300px;
     width: 350px;
-    background-color: gold;
+    background-color: var(--favcolor);
     border-radius: 20px;
     /* clip-path: path('M20,0 L330,51 Q350,51 350,71 L348,228 Q347,245 330,249 L20,300 Q0,300 0,280 L0,20 Q0,0 20,0 Z'); */
     transition: all 1s;
-     clip-path: path("M20,0 L325,45 C340,47 350,58 350,72L350,228 C350,242 340,250 325,253L20,300C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0Z");
-     
+    clip-path: path("M20,0 L325,45 C340,47 350,58 350,72L350,228 C350,242 340,250 325,253L20,300C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0Z");
+
 }
 
 .proright {
@@ -979,8 +995,8 @@ label {
     transition: all 1s;
     background-color: rgba(122, 119, 119, 0.4);
     border-top-right-radius: 20px;
-     clip-path: path("M20,0 L325,40 C345,43 345,39 350,72 L350,228 C350,242 340,250 325,253 L20,300 C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0 Z" );
-      clip-path: path("M20,0 L325,45 C340,47 350,58 350,72L350,228 C350,242 340,250 325,253L20,300C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0Z");
+    clip-path: path("M20,0 L325,40 C345,43 345,39 350,72 L350,228 C350,242 340,250 325,253 L20,300 C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0 Z");
+    clip-path: path("M20,0 L325,45 C340,47 350,58 350,72L350,228 C350,242 340,250 325,253L20,300C9,302 0,293 0,280 L0,20 C0,8 8,0 20,0Z");
 }
 
 .bgl-pro1 {}
@@ -1024,22 +1040,27 @@ label {
     background-color: rgba(122, 119, 119, 0.5);
     background-color: rgba(7, 14, 34, 0.5);
 }
+
 .subpro-1:hover .proleft {
     transform: translateY(100px);
 }
+
 .subpro-2:hover .proright {
     transform: translateY(-100px);
     background-color: rgba(122, 119, 119, 0.5);
     background-color: rgba(7, 14, 34, 0.5);
 }
+
 .subpro-2:hover .proleft {
     transform: translateY(100px);
 }
+
 .subpro-3:hover .proright {
     transform: translateY(-100px);
     background-color: rgba(122, 119, 119, 0.5);
     background-color: rgba(7, 14, 34, 0.5);
 }
+
 .subpro-3:hover .proleft {
     transform: translateY(100px);
 }
@@ -1053,12 +1074,12 @@ label {
 
 
 .eduction {
-    min-height: 100vh;
+    min-height: 88vh;
     width: 100%;
-    background-color: violet;
-    scroll-margin: 200px;
+    /* background-color: violet; */
+    scroll-margin: 50px;
     padding: 28px 0px;
-    gap: 50px;
+    gap: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1269,7 +1290,7 @@ label {
 
 /*----contact----page-6 -----*/
 .contact {
-    min-height: 88vh;
+    min-height: 39vh;
 
     display: flex;
 
@@ -1314,8 +1335,9 @@ label {
     align-items: start;
     gap: 4px;
 }
-.ft-col1 a{
-    color:white;
+
+.ft-col1 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -1450,11 +1472,11 @@ label {
     .lapskillheading {
         display: none;
     }
-    
-.mtheading {
-    display:block;
-    margin-bottom:12px;
-}
+
+    .mtheading {
+        display: block;
+        margin-bottom: 12px;
+    }
 
     .mtbike1 {
         display: flex;
@@ -1576,12 +1598,15 @@ label {
         top: 70%;
         left: 18%;
     }
-    .cir4,.cir6{
-        top:100%;
+
+    .cir4,
+    .cir6 {
+        top: 100%;
     }
+
     .vr-line4,
-    .hr-line4{
-        top:140%;
+    .hr-line4 {
+        top: 140%;
 
     }
 
@@ -1604,22 +1629,24 @@ label {
         height: 43px;
         width: 2.8px;
     }
-    .vr-line4
-    {
-        top:131%;
+
+    .vr-line4 {
+        top: 131%;
 
     }
-    .hr-line4{
-        top:124%;
+
+    .hr-line4 {
+        top: 124%;
 
     }
-    .vr-line6
-    {
-        top:131%;
+
+    .vr-line6 {
+        top: 131%;
 
     }
-    .hr-line6{
-        top:124%;
+
+    .hr-line6 {
+        top: 124%;
 
     }
 
@@ -1728,8 +1755,6 @@ label {
         flex-direction: column;
         justify-content: space-evenly;
         min-height: 100vh;
-
-
         gap: 45px;
     }
 
@@ -1739,8 +1764,24 @@ label {
         font-size: 36px;
     }
 
+    .firstcircle {
+        width: 228px;
+        height: 250px;
+    }
+
+    .overmypic::before {
+
+        width: 260px;
+        height: 290px;
+
+    }
+
+    .ptxtrole {
+        margin-bottom: 45px;
+    }
+
     .contentrole {
-        width: 80%;
+        width: 94%;
         padding: 0px;
     }
 
@@ -1778,10 +1819,11 @@ label {
     .lapskillheading {
         display: none;
     }
+
     .mtheading {
-    display:block;
-    margin-bottom:12px;
-}
+        display: block;
+        margin-bottom: 12px;
+    }
 
     .mtbike1 {
         display: flex;
@@ -1910,17 +1952,21 @@ label {
         transform: rotate(0deg);
         height: 4px;
     }
-    .cir4{
-        top:125%;
+
+    .cir4 {
+        top: 125%;
     }
-    .cir6{
-        top:144%;
+
+    .cir6 {
+        top: 144%;
     }
-    .hr-line4{
-        top:140%;
+
+    .hr-line4 {
+        top: 140%;
     }
-    .hr-line6{
-        top:158%;
+
+    .hr-line6 {
+        top: 158%;
     }
 
     /*-----heading 1 to 6- based on there sub heading height- --*/
@@ -1930,7 +1976,9 @@ label {
         /*---padding row 6--*/
         padding: 0px;
     }
-    .row4,.row6{
+
+    .row4,
+    .row6 {
         /* height:190px; */
     }
 
@@ -1969,7 +2017,7 @@ label {
         height: 296px;
         width: 285px;
         clip-path: path("M17,0 L264,44 C277,46 285,56 285,69 L285,225 C285,239 276,247 263,250 L17,296 C7,298 0,290 0,278 L0,20 C0,8 7,0 17,0 Z");
-      
+
     }
 
     /*---education--*/
